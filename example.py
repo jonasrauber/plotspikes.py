@@ -22,6 +22,11 @@ def main():
     plt.xlabel("time in ms")
     plt.xlim([-50, 2050])
     
+    # save the plot without axes
+    plt.axis('off')
+    plt.savefig("images/example.png", bbox_inches='tight')
+    plt.axis('on')
+    
     # show the complete plot
     plt.show()
 

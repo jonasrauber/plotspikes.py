@@ -7,7 +7,7 @@ def main():
     """Example how to use plotspikes"""
     
     # create a figure and plot some random signal
-    plt.figure(0, figsize=(15,5))
+    plt.figure(0, figsize=(15,3))
     np.random.seed(22)
     xsignal = 20 * np.arange(100)
     ysignal = 6. + np.cumsum(np.random.randn(100))
@@ -19,7 +19,6 @@ def main():
     
     # add labels and axis limits
     plt.xlabel("time in ms")
-    plt.xlim([-50, 2050])
     
     # save the plot without axes
     plt.axis('off')
